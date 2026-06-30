@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 511553926}
   - component: {fileID: 511553928}
   - component: {fileID: 511553927}
+  - component: {fileID: 511553929}
   m_Layer: 5
   m_Name: ScoreTitle
   m_TagString: Untagged
@@ -331,6 +332,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511553925}
   m_CullTransparentMesh: 1
+--- !u!95 &511553929
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511553925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d7ee22cb85ec1354497bf794b83ef303, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +503,7 @@ GameObject:
   - component: {fileID: 521986498}
   - component: {fileID: 521986497}
   - component: {fileID: 521986499}
+  - component: {fileID: 521986500}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -618,6 +642,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06908bd037083845a3ca432d7e74e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinUI
+--- !u!95 &521986500
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521986495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 34c13218206161c47adf97f7d7c219b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1030,7 @@ GameObject:
   - component: {fileID: 1590146874}
   - component: {fileID: 1590146873}
   - component: {fileID: 1590146876}
+  - component: {fileID: 1590146877}
   m_Layer: 5
   m_Name: Click
   m_TagString: Untagged
@@ -1152,6 +1199,28 @@ MonoBehaviour:
   - {fileID: -2035278771, guid: 127479792839da64e83fdeab1cf7e935, type: 3}
   - {fileID: -274898307, guid: 127479792839da64e83fdeab1cf7e935, type: 3}
   - {fileID: -1646295330, guid: 127479792839da64e83fdeab1cf7e935, type: 3}
+--- !u!95 &1590146877
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590146871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f86eee70f0f9254c938e0754aa8f003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1691930289
 GameObject:
   m_ObjectHideFlags: 0
