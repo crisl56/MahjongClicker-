@@ -41,13 +41,13 @@ public class CoinManager : MonoBehaviour
         return true;
     }
 
-    void AddCoins(BigDouble amount)
+    public void AddCoins(BigDouble amount)
     {
         Coins += amount;
         CoinsUpdated?.Invoke();
     }
 
-    void SetCoins(BigDouble amount)
+    public void SetCoins(BigDouble amount)
     {
         Coins = amount;
         CoinsUpdated?.Invoke();
