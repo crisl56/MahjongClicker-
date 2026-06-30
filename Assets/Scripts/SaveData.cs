@@ -5,5 +5,10 @@ public class SaveData
 {
     public string coins;
     public long lastSaveTime;
-    public List<UpgradeSaveData> upgrades = new();
+    public StatHolderSaveData statHolder = new();
+}
+[System.Serializable]
+public class StatHolderSaveData
+{
+    public List<string> ActiveBuffNames = new();
 }

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
@@ -17,16 +16,13 @@ public class UpgradeManager : MonoBehaviour
         Instance = this;
     }
 
-    public List<UpgradeSaveData> GetSaveData()
+    public StatHolder GetSaveData()
     {
         // TODO: make sure that theres a way to get save here!!
         // Needs upgrades ID + upgrade level
 
-        return new List<UpgradeSaveData>();
+        return new StatHolder();
     }
 
-    public void LoadSaveData(List<UpgradeSaveData> savedUpgrades)
-    {
-        // TODO: load here!!!
-    }
+    
 }

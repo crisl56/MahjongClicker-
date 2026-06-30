@@ -9,6 +9,8 @@ public class SaveManager : MonoBehaviour
 
     private string SavePath => Path.Combine(Application.persistentDataPath, "save.json");
 
+    [SerializeField] private BuffDatabase buffDatabase;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -42,7 +44,7 @@ public class SaveManager : MonoBehaviour
         {
             coins = CoinManager.Instance.Coins.ToString(),
             lastSaveTime = DateTime.UtcNow.Ticks,
-            upgrades = UpgradeManager.Instance.GetSaveData()
+            statHolder = CoinManager.Instance.StatHolder.GetSaveData()
         };
 
         string json = JsonUtility.ToJson(data, true);
@@ -57,7 +59,12 @@ public class SaveManager : MonoBehaviour
         SaveData data = JsonUtility.FromJson<SaveData>(json);
 
         CoinManager.Instance.SetCoins(BigDouble.Parse(data.coins));
-        UpgradeManager.Instance.LoadSaveData(data.upgrades);
+
+        StatHolder statHolder = new();
+        statHolder.LoadSaveData(data.statHolder, buffDatabase);
+        CoinManager.Instance.SetStats(statHolder);
+
+        ApplyOfflineEarnings(data.lastSaveTime);
     }
 
     public void ClearSave()
